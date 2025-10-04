@@ -1,0 +1,27 @@
+main {
+
+      display: grid;  
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      margin: 20px;
+}
+
+article {border: 1px solid;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+article:nth-child(odd) {
+      background-color: yellow; color: black;
+}
+article:nth-child(even) {
+      background-color: green;
+}
+article:first-child{ background-color: blue;
+
+}
+article:last-child{
+      background-color: red;
+}
